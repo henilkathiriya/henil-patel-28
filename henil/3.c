@@ -1,15 +1,16 @@
-#include <stdio.h>
-int main()
+#include<stdio.h>
+
+int main(){
+int start = 1, end;
+printf("koy pan number nakho");
+scanf("%d", &end);
+
+
+while (start <= end)
+
 {
+    printf("%d\n", start, end);
+    start++;
+}
 
-    int p, q, r;
-
-    printf("first side = ");
-    scanf("%d", &p);
-
-    printf("second side = ");
-    scanf("%d", &q);
-
-    r = 180 - (p + q);
-    printf("third side : %d", r);
 }

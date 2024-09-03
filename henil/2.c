@@ -1,12 +1,14 @@
 #include <stdio.h>
-int main()
-{
 
-    float c, f;
+int main(){
 
-    printf("enter the value = ");
-    scanf("%f", &c);
+    int start = 10, end = 1;
 
-    f = (1.8 * c) + 32;
-    printf("formula : %.1f", f);
+
+    while (start >=end)
+    {
+        printf("%d\n", start);
+        start--;
+    }
+    
 }
