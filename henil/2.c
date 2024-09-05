@@ -1,14 +1,21 @@
 #include <stdio.h>
 
-int main(){
-
-    int start = 10, end = 1;
+int main()
 
 
-    while (start >=end)
+
+{
+
+    int ans = 1, end;
+
+    printf("enter the value => ");
+    scanf("%d", &end);
+
+
+    for (int start = 1; start <= end; start++)
     {
-        printf("%d\n", start);
-        start--;
+        ans *= start;
     }
     
+    printf("%d\n", ans);
 }
