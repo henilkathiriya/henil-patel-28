@@ -4,13 +4,13 @@ int main()
 {
     for (int row = 5; row >= 1; row--)
     {
-        for (int spa = 1; spa <= row; spa++)
+        for (int spa = row; spa >= 1; spa--)
         {
             printf("  ");
         }
         for (int col = row; col <= 5; col++)
         {
-            printf("%d ", col);
+            printf("%d ", row);
         }
 
         printf("\n");

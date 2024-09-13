@@ -2,13 +2,13 @@
 
 int main()
 {
-    for (int row = 5; row >= 1; row--)
+    for (int row = 1; row <= 5; row++)
     {
-        for (int spa = 1; spa <= row; spa++)
+        for (int spa = row; spa >= 2; spa--)
         {
             printf("  ");
         }
-        for (int col = row; col <= 5; col++)
+        for (int col = 5; col >= row; col--)
         {
             printf("%d ", col);
         }

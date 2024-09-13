@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main()
@@ -7,7 +8,7 @@ int main()
     {
         for (int col = row; col >= 1; col--)
         {
-            printf("%d", col);
+            printf("%d", row);
         }
         printf("\n");
     }

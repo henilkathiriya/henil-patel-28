@@ -1,27 +1,21 @@
 #include <stdio.h>
 
 int main()
-
-
 {
-
-    int ans = 0;
-    int end;
-
-
-    printf("enter the value => ");
-    scanf("%d", &end);
-
-
-
-    for (int start = 1; start <= end; start++)
-
-
-
+    for (int row = 1; row <= 5; row++)
     {
-        ans += start;
-        printf("%d\n", ans);
+        for (int spa = 4; spa >= row; spa--)
+        {
+            printf("  ");
+        }
+        for (int col = row; col >= 1; col--)
+        {
+            printf("%d ", col);
+
+            
+        }
+
+        printf("\n");
     }
 
-    
 }
