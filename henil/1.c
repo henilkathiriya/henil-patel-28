@@ -2,20 +2,23 @@
 
 int main()
 {
-    for (int row = 1; row <= 5; row++)
+
+    int sizemax;
+
+    printf("enter the valu => ");
+    scanf("%d", &sizemax);
+
+    int box[sizemax];
+
+    for (int i = 0; i < sizemax; i++)
     {
-        for (int spa = 4; spa >= row; spa--)
-        {
-            printf("  ");
-        }
-        for (int col = row; col >= 1; col--)
-        {
-            printf("%d ", col);
-
-            
-        }
-
-        printf("\n");
+        printf("enter the value => ");
+        scanf("%d", &box[i]);
     }
+    printf("-----------------------\n");
 
+    for (int i = 0; i < sizemax; i++)
+    {
+        printf("value => %d \n", box[i]);
+    }
 }
