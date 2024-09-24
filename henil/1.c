@@ -2,30 +2,29 @@
 
 int main()
 {
-    int rowsize, colsize, store;
-    float sum = 0;
 
-    printf("Enter the array's row size: ");
-    scanf("%d", &rowsize);
+    int size;
 
-    printf("Enter the array's column size: ");
-    scanf("%d", &colsize);
+    printf("enter the value => ");
+    scanf("%d", &size);
 
-    store = rowsize * colsize;
+    int box[size];
 
-    printf("\n");
-
-    int box[rowsize][colsize];
-    for (int row = 0; row < rowsize; row++)
+    for (int i = 0; i < size; i++)
     {
-        for (int col = 0; col < colsize; col++)
+
+        printf("enter the v.[%d] =>", i);
+        scanf("%d", &box[i]);
+    }
+    printf("==========================================\n");
+    printf("nagativ value => ");
+
+    for (int i = 0; i < size; i++)
+    {
+
+        if (box[i] < 0)
         {
-            printf("box[%d][%d] = ", row, col);
-            scanf("%d", &box[row][col]);
-            sum += box[row][col];
+            printf("%d, ", box[i]);
         }
     }
-
-    float avg = sum / store;
-    printf("Average of an Array: %.2f", avg);
 }

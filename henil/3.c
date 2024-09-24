@@ -3,46 +3,30 @@
 int main()
 {
 
-    int sizemax;
+    int rowsize, colsize;
 
     printf("enter the value => ");
-    scanf("%d", &sizemax);
+    scanf("%d", &rowsize);
 
-    int box[sizemax];
+    printf("enter the value => ");
+    scanf("%d", &colsize);
 
-    for (int i = 0; i < sizemax; i++)
+    int box[rowsize][colsize];
+
+    for (int i = 0; i < rowsize; i++)
     {
-        printf("enter the value  => ");
-        scanf("%d", &box[i]);
+        for (int j = 0; j < colsize; j++)
+        {
+            printf("value [%d][%d]=> ", i, j);
+            scanf("%d", &box[i][j]);
+        }
     }
-    printf("----------------------------\n");
-
-    for (int i = 0; i < sizemax; i++)
+    for (int i = 0; i < rowsize; i++)
     {
-        printf("value box[%d] => %d \n", i, box[i]);
-    }
-
-    printf("--------------------------------------------------\n");
-
-    int box2[sizemax];
-
-    for (int i = 0; i < sizemax; i++)
-    {
-        printf("enter the value  => ");
-        scanf("%d", &box2[i]);
-    }
-    printf("----------------------------\n");
-
-    for (int i = 0; i < sizemax; i++)
-    {
-        printf("value box2[%d] => %d \n", i, box2[i]);
-    }
-    printf("----------------------------------------------------\n");
-
-    int box3[sizemax];
-
-    for (int i = 0; i < sizemax; i++)
-    {
-        printf("value box3[%d] => %d \n", i, box[i] + box2[i]);
+        for (int j = 0; j < colsize; j++)
+        {
+            printf("%d ", box[j][i]);
+        }
+        printf("\n");
     }
 }

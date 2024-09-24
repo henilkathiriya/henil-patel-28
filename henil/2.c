@@ -2,46 +2,36 @@
 
 int main()
 {
-    int rowsize, colsize, sum = 0;
 
-    printf("Enter the array's row size: ");
+    int rowsize, colsize, bhai  = 0;
+
+    printf("enter the value => ");
     scanf("%d", &rowsize);
 
-    printf("Enter the array's column size: ");
+    printf("enter the value => ");
     scanf("%d", &colsize);
 
-    printf("\n");
-
     int box[rowsize][colsize];
-    for (int row = 0; row < rowsize; row++)
+
+    for (int i = 0; i < rowsize; i++)
     {
-        for (int col = 0; col < colsize; col++)
+        for (int j = 0; j < colsize; j++)
         {
-            printf("box[%d][%d] = ", row, col);
-            scanf("%d", &box[row][col]);
+            printf("value [%d][%d]=> ", i, j);
+            scanf("%d", &box[i][j]);
         }
     }
-
-    printf("\n");
-
-    int box2[rowsize][colsize];
-    for (int row = 0; row < rowsize; row++)
+    for (int i = 0; i < rowsize; i++)
     {
-        for (int col = 0; col < colsize; col++)
+        for (int j = 0; j < colsize; j++)
         {
-            printf("box2[%d][%d] = ", row, col);
-            scanf("%d", &box2[row][col]);
+            if (box[i][j] > bhai)
+            {
+                bhai = box[i][j];
+            }
         }
     }
+    printf("================================\n");
 
-    int box3[rowsize][colsize];
-    for (int row = 0; row < rowsize; row++)
-    {
-        for (int col = 0; col < colsize; col++)
-        {
-            box3[row][col] = box[row][col] + box2[row][col];
-            printf("%d ", box3[row][col]);
-        }
-        printf("\n");
-    }
+    printf(" very big number is => %d", bhai);
 }
