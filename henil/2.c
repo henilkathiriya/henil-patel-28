@@ -1,37 +1,31 @@
 #include <stdio.h>
 
+int panth()
+{
+
+    int num;
+    printf("enter the value => ");
+    scanf("%d", &num);
+
+    if (num % 3 == 0 && num % 5 == 0)
+    {
+        printf("The given number is divisible by both 3 & 5.\n");
+    }
+    else
+    {
+        printf("The given number is not divisible by both 3 & 5.\n");
+    }
+}
 int main()
 {
 
-    int rowsize, colsize, bhai  = 0;
+    int box1;
 
-    printf("enter the value => ");
-    scanf("%d", &rowsize);
+    printf("enter the loop value => ");
+    scanf("%d", &box1);
 
-    printf("enter the value => ");
-    scanf("%d", &colsize);
-
-    int box[rowsize][colsize];
-
-    for (int i = 0; i < rowsize; i++)
+    for (int i = 0; i < box1; i++)
     {
-        for (int j = 0; j < colsize; j++)
-        {
-            printf("value [%d][%d]=> ", i, j);
-            scanf("%d", &box[i][j]);
-        }
+        panth();
     }
-    for (int i = 0; i < rowsize; i++)
-    {
-        for (int j = 0; j < colsize; j++)
-        {
-            if (box[i][j] > bhai)
-            {
-                bhai = box[i][j];
-            }
-        }
-    }
-    printf("================================\n");
-
-    printf(" very big number is => %d", bhai);
 }

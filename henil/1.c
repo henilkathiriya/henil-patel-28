@@ -1,30 +1,22 @@
+
 #include <stdio.h>
+
+    int vrajesh()
+{
+
+    int box;
+
+    printf("enter the value => ");
+    scanf("%d", &box);
+
+    printf("ans => %d\n", box * box * box);
+}
 
 int main()
 {
 
-    int size;
-
-    printf("enter the value => ");
-    scanf("%d", &size);
-
-    int box[size];
-
-    for (int i = 0; i < size; i++)
+    for (int i = 1; i <= 5; i++)
     {
-
-        printf("enter the v.[%d] =>", i);
-        scanf("%d", &box[i]);
-    }
-    printf("==========================================\n");
-    printf("nagativ value => ");
-
-    for (int i = 0; i < size; i++)
-    {
-
-        if (box[i] < 0)
-        {
-            printf("%d, ", box[i]);
-        }
+        vrajesh();
     }
 }
