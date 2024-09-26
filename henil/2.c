@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int panth()
+int henlo()
 {
 
     int num;
@@ -26,6 +26,6 @@ int main()
 
     for (int i = 0; i < box1; i++)
     {
-        panth();
+        henlo();
     }
 }

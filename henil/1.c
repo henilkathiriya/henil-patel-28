@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 
-    int vrajesh()
+    int henil()
 {
 
     int box;
@@ -17,6 +17,6 @@ int main()
 
     for (int i = 1; i <= 5; i++)
     {
-        vrajesh();
+        henil();
     }
 }
